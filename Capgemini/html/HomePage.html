@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="..//css/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;1,200;1,300;1,400&family=Noto+Sans:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+
+        }
+
+
+
+
+        .clsSearch {
+            padding: 1% !important;
+            width: 25% !important;
+            border: none !important;
+            height: 30px !important;
+            /* border-radius: 5px; */
+
+        }
+
+        .clsbtnSearch {
+            padding-top: 0% !important;
+            padding-bottom: 0% !important;
+            padding-left: 1% !important;
+            padding-right: 1% !important;
+            border: none !important;
+            border: none !important;
+
+            margin-right: 1% !important;
+            height: 30px;
+
+        }
+
+        .clsTable2 {
+            width: 96% !important;
+            margin-left: 2% !important;
+            margin-right: 2% !important;
+            background-color: white !important;
+            padding: 3% 2% 3% 2% !important;
+            border-spacing: 6px !important;
+        }
+
+        .clstable1td {
+            width: 100% !important;
+            text-align: right !important;
+            padding: 1% !important;
+
+        }
+
+        .clsTable1 {
+          
+            padding-bottom: 23% !important;
+           
+        }
+
+            .btnViewAllUsers {
+                font-size: 100%;
+                font-weight: bold;
+                padding: 5%;
+                border: none;
+                border-radius: 5%;
+                margin-right: 3%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+.clstd{padding-bottom: 24%;}
+            .btnAddNewUser {
+                font-size: 100%;
+                font-weight: bold;
+                padding: 5%;
+                border: none;
+                border-radius: 5%;
+                margin-left: 3%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+    </style>
+</head>
+
+<body>
+    <table class="clsTable1">
+        <tbody>
+            <tr class="clsTable1td1">
+                <td ><img src="..//images/CapGeminiLogo.jpg" class="clsImgCapLogo" /></td>
+                <td class="clsTable1td2" ><span>|</span><span class="clsGST">GST</span>&nbsp;<span
+                        class="clsTable2Td1">ASP Portal</span>
+                </td>
+                <!-- <td><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" />&nbsp;<span>Hello, &nbsp CA &nbsp Dealer</span></td> -->
+
+                <td class="clstable1td3">
+                    <div class="clstable1div1">
+                        <div class="clstable1div2"><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" /></div>
+                        <div>Hello, CA Dealer</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="clstdLoginUserRole"> Login as Admin</td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="3" class="clstable1td">
+                    <input class="clsSearch" type="search" placeholder="Search User" /><button type="submit"
+                        class="clsbtnSearch"><i class="fa fa-search"></i></button>
+                </td>
+
+            </tr>
+            <tr >
+                <td colspan="3" class="clstd">
+                    <table class="clsTable2">
+                        <tbody>
+                            <tr>
+                                <td style="width: 50%; text-align: right;"><input type="button" value="View All Users"
+                                        class="btnViewAllUsers" onclick="LoadViewAllUser()" /></td>
+                                <td style="width: 50%; text-align: left;"> <input type="button" value="Add New User"
+                                        class="btnAddNewUser" onclick="LoadAddNewUser()" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+
+    <script>
+        function LoadViewAllUser() {
+            window.location.href = "VIewAllUserDetails.html";
+        }
+        function LoadAddNewUser() {
+            window.location.href = "AddNewUser.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View User Details</title>
+
+    <link rel="stylesheet" href="..//css/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;1,200;1,300;1,400&family=Noto+Sans:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+
+        }
+
+        .clsTableUserDetails {
+            width: 100%;
+            border-collapse: collapse;
+
+
+        }
+
+        .clsTableUserDetails tbody td:nth-child(1) {
+
+            width: 20%;
+            text-align: right;
+            /* padding-right: 1%;  */
+            font-weight: bold;
+             padding: 1%; 
+        }
+
+        .clsTableUserDetails tbody td:nth-child(3) {
+
+            width: 20%;
+            text-align: right;
+            padding-right: 1%;
+            font-weight: bold;
+        }
+
+        .clsTableUserDetailstd1 {
+            width: 20%;
+            text-align: right;
+            /* padding-right: 1%; */
+            font-weight: bold;
+            vertical-align: top;
+            padding: 0% 1% 0% 0% !important;
+
+        }
+
+        .clsTableUserDetails tbody td:nth-child(2) {
+
+            width: 30%;
+            text-align: left;
+            padding-left: 1%;
+        }
+
+        .clsTableUserDetails tbody td:nth-child(4) {
+
+            width: 30%;
+            text-align: left;
+            padding-left: 1%;
+        }
+
+        .btnEdit {
+            color: #F8FBF8;
+            background-color: #00A654;
+            padding: 6px 20px 6px 20px;
+            border-width: 0px;
+            border-radius: 5px;
+
+        }
+
+        .clsTableUserDetailstd {
+            text-align: right;
+            padding: 1%;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="clsTable1">
+        <tbody>
+            <tr class="clsTable1td1">
+                <td><a href="../html/HomePage.html"><img src="..//images/CapGeminiLogo.jpg" class="clsImgCapLogo" /></a></td>
+                <td><span>|</span><span class="clsGST">GST</span> &nbsp;<span class="clsTable2Td1">ASP &nbsp;
+                        Portal</span>
+                </td>
+                <!-- <td><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" />&nbsp;<span>Hello, &nbsp CA &nbsp Dealer</span></td> -->
+
+                <td class="clstable1td3">
+                    <div class="clstable1div1">
+                        <div class="clstable1div2"><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" /></div>
+                        &nbsp;Hello, &nbsp CA &nbsp Dealer
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="clstdLoginUserRole"> Login as Admin</td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="2" class="clstable1td"><input class="clsbtnNewUser" type="button" value="New User" /></td>
+                <td><input class="clsSearch" type="search" placeholder="Search User" /><button type="submit"
+                        class="clsbtnSearch"><i class="fa fa-search"></i></button> </td>
+
+            </tr>
+            <tr>
+                <td colspan="3" class="clstable1tds">
+                    <table class="clsTable2">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="clsTable2Td1">View User Details</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="clsTable2Td2">User Id: 655016</td>
+                            </tr>
+
+                            <tr>
+                                <td class="clstdtableouter">
+                                    <!-- start innertable -->
+
+                                    <table class="clsTableUserDetails">
+                                        <tbody>
+
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Srikanth</td>
+                                                <td>Email</td>
+                                                <td>srikanth.b@sincera.in</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company Name</td>
+                                                <td>Sincera Consulting India PVT LTD</td>
+                                                <td>Company Code</td>
+                                                <td>1234567</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2" class="clsTableUserDetailstd1">Company Address</td>
+                                                <td rowspan="2">Address Line1 </br>Address Line2</br>Address Line3 </td>
+                                                <td>GSTIN1</td>
+                                                <td>Sample text</td>
+                                            </tr>
+                                            <tr>
+                                                <td>GSTIN2</td>
+                                                <td>Sample text</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company Number</td>
+                                                <td>000 000 000</td>
+                                                <td>GSTIN3</td>
+                                                <td>Sample text</td>
+                                            </tr>
+                                            <tr>
+
+                                                <td colspan="4" class="clsTableUserDetailstd"><input type="button"
+                                                        class="btnEdit" value="Edit" onclick="LoadEditUser()" /></td>
+                                            </tr>
+
+
+
+
+
+                                        </tbody>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+    <script>
+        function LoadEditUser() {
+            window.location.href = "EditUserDatails.html";
+        }
+    </script>
+</body>
+
+</html>

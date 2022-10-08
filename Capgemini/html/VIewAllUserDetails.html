@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View All User Details</title>
+
+    <link rel="stylesheet" href="..//css/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;1,200;1,300;1,400&family=Noto+Sans:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .clsTableUserDetails {
+            width: 100%;
+            border-collapse: collapse;
+
+
+        }
+
+        th {
+            background-color: #1359A1;
+            text-align: left;
+            padding: 5px 2px 5px 10px;
+            color: #FBFAFC;
+
+
+        }
+
+        .clsTableUserDetails tbody td {
+            padding: 5px 2px 5px 10px;
+            border: 1px solid #cacaca;
+
+
+        }
+
+        .clstable1tds {
+            padding-bottom: 2%;
+            
+        }
+
+        .btnEdit {
+            color: #F8FBF8;
+            background-color: #00A654;
+            padding: 5px 12px 5px 12px;
+            border-width: 0px;
+            border-radius: 5px;
+
+        }
+
+        .clsTableUserDetails tbody td:nth-child(5) {
+            text-align: center;
+            border: 0px;
+            padding: 0px !important;
+            border: 0px;
+
+        }
+
+        .clsTableUserDetails tbody td:nth-child(6) {
+            text-align: center;
+            border: 0px;
+            padding: 0px !important;
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="clsTable1">
+        <tbody>
+            <tr class="clsTable1td1">
+                <td><a href="../html/HomePage.html"><img src="..//images/CapGeminiLogo.jpg" class="clsImgCapLogo" /></a>
+                </td>
+                <td><span>|</span><span class="clsGST">GST</span>&nbsp;<span class="clsTable2Td1">ASP Portal</span>
+                </td>
+                <!-- <td><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" />&nbsp;<span>Hello, &nbsp CA &nbsp Dealer</span></td> -->
+
+                <td class="clstable1td3">
+                    <div class="clstable1div1">
+                        <div class="clstable1div2"><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" /></div>
+                        &nbsp;Hello, &nbsp CA &nbsp Dealer
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="clstdLoginUserRole"> Login as Admin</td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="2" class="clstable1td"><input class="clsbtnNewUser" type="button" value="New User"
+                        onclick="LoadAddNewUser()" /></td>
+                <td><input class="clsSearch" type="search" placeholder="Search User" /><button type="submit"
+                        class="clsbtnSearch"><i class="fa fa-search"></i></button> </td>
+
+            </tr>
+            <tr>
+                <td colspan="3" class="clstable1tds" ;>
+                    <table class="clsTable2">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="clsTable2Td1">User Details</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="clsTable2Td2">Registered Users</td>
+                            </tr>
+
+                            <tr>
+                                <td class="clstdtableouter">
+                                    <!-- start innertable -->
+                                    <!-- <table>
+                                        <tbody>
+                                            <tr>
+                                                <td> -->
+                                    <!-- start 2nd innertable -->
+                                    <table class="clsTableUserDetails">
+                                        <tbody>
+
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>User ID</th>
+                                                <th>Company Name</th>
+                                                <th>Contact Number</th>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Srikanth</td>
+                                                <td>655016</td>
+                                                <td>Sincera</td>
+                                                <td>9886166136</td>
+                                                <td><input type="button" value="Edit" class="btnEdit"
+                                                        onclick="LoadEditUser()" />
+                                                </td>
+                                                <td>
+                                                    <input type="button" value="View" class="btnEdit"
+                                                        onclick="LoadViewUser()" />
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Srikanth</td>
+                                                <td>655016</td>
+                                                <td>Sincera Consulting India Pvt LTD</td>
+                                                <td>9886166136</td>
+                                                <td><input type="button" value="Edit" class="btnEdit"
+                                                        onclick="LoadEditUser()" />
+                                                </td>
+                                                <td>
+                                                    <input type="button" value="View" class="btnEdit"
+                                                        onclick="LoadViewUser()" />
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Hemanth</td>
+                                                <td>655016</td>
+                                                <td>MHPS</td>
+                                                <td>9886166136</td>
+                                                <td><input type="button" value="Edit" class="btnEdit"
+                                                        onclick="LoadEditUser()" /></td>
+                                                <td>
+                                                    <input type="button" value="View" class="btnEdit"
+                                                        onclick="LoadViewUser()" />
+                                                </td>
+
+                                            </tr>
+
+                                            <tr>
+                                                <td>Srikanth</td>
+                                                <td>655016</td>
+                                                <td>Sincera</td>
+                                                <td>9886166136</td>
+                                                <td><input type="button" value="Edit" class="btnEdit"
+                                                        onclick="LoadEditUser()" /></td>
+                                                <td>
+                                                    <input type="button" value="View" class="btnEdit"
+                                                        onclick="LoadViewUser()" />
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Srikanth</td>
+                                                <td>655016</td>
+                                                <td>Sincera</td>
+                                                <td>9886166136</td>
+                                                <td><input type="button" value="Edit" class="btnEdit"
+                                                        onclick="LoadEditUser()" /></td>
+                                                <td>
+                                                    <input type="button" value="View" class="btnEdit"
+                                                        onclick="LoadViewUser()" />
+                                                </td>
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                    <!-- end 2nd innertable -->
+
+
+                                    <!-- </td>
+                                            </tr>
+                                        </tbody>
+                                    </table> -->
+                                    <!-- end innertable -->
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+
+    <script>
+
+        function LoadAddNewUser() {
+            window.location.href = "AddNewUser.html";
+        }
+        function LoadEditUser() {
+            window.location.href = "EditUserDatails.html";
+        }
+        function LoadViewUser() {
+            window.location.href = "ViewUserDetails.html";
+        }
+        function LoadDeleteUser() {
+            window.location.href = "DeleteUserDetails.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New User</title>
+
+    <link rel="stylesheet" href="..//css/common.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;1,200;1,300;1,400&family=Noto+Sans:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+
+        }
+
+
+        .clsTableUserDetails {
+            width: 100%;
+            border-collapse: collapse;
+
+
+        }
+
+        .clsTableUserDetails tbody td:nth-child(1) {
+
+            width: 20%;
+            text-align: right;
+            /* padding-right: 1%; */
+            font-weight: bold;
+            padding: 1%;
+
+        }
+        
+
+        .clsTableUserDetails tbody td:nth-child(3) {
+
+            width: 20%;
+            text-align: right;
+            padding-right: 1%;
+            font-weight: bold;
+        }
+
+        .clsTableUserDetailstd1 {
+            width: 20%;
+            text-align: right;
+            padding-right: 1%;
+            font-weight: bold;
+            padding-bottom: 4%;
+
+        }
+
+        .clsSearch {
+            padding: 1% !important;
+            width: 25% !important;
+            border: none !important;
+            height: 30px !important;
+            /* border-radius: 5px; */
+
+        }
+
+        .clsbtnSearch {
+            padding-top: 0% !important;
+            padding-bottom: 0% !important;
+            padding-left: 1% !important;
+            padding-right: 1% !important;
+            border: none !important;
+            border: none !important;
+
+            margin-right: 1% !important;
+            height: 30px;
+
+        }
+
+        .clstable1td {
+            width: 100% !important;
+            text-align: right !important;
+            padding: 1% !important;
+
+        }
+
+        .clsTableUserDetails tbody td:nth-child(2) {
+
+            width: 30%;
+            text-align: left;
+            padding-left: 1%;
+        }
+
+        .clsTableUserDetails tbody td:nth-child(4) {
+
+            width: 30%;
+            text-align: left;
+            padding-left: 1%;
+        }
+
+        .btnEdit {
+            background-color: #00A654;
+            color: #FEFFFF;
+            font-weight: bold;
+            border: 0px;
+            padding: 1% 2% 1% 2%;
+            border-radius: 5px;
+
+        }
+
+        .btnContactNumber {
+            border-radius: 5px;
+            color: #FEFFFF;
+            font-weight: bold;
+            border: 0px;
+            background-color: #00A654;
+            padding: 7px;
+
+        }
+
+        input[type="text"] {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            width: 60%;
+            border-color: #E2E2E2;
+
+            background-color: #FFFFFF;
+            border-width: 1px;
+            border-radius: 5px;
+
+            border-style: solid;
+
+        }
+
+        .clstxtContactNumber {
+            width: 12% !important;
+            margin-top: 1% !important;
+            padding-top: 1% !important;
+            padding-bottom: 1% !important;
+            border-color: #E2E2E2 !important;
+
+            background-color: #FFFFFF !important;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table class="clsTable1">
+        <tbody>
+            <tr class="clsTable1td1">
+                <td> <a href="../html/HomePage.html"><img src="..//images/CapGeminiLogo.jpg" class="clsImgCapLogo" /></a></td>
+                <td class="clsTable1td2"><span>|</span><span class="clsGST">GST</span>&nbsp;<span
+                        class="clsTable2Td1">ASP Portal</span>
+                </td>
+                <!-- <td><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" />&nbsp;<span>Hello, &nbsp CA &nbsp Dealer</span></td> -->
+
+                <td class="clstable1td3">
+                    <div class="clstable1div1">
+                        <div class="clstable1div2"><img src="..//images/HumanIcon.jpg" class="clsImgHumanIcon" /></div>
+                        <div>Hello, CA Dealer</div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="clstdLoginUserRole"> Login as Admin</td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="3" class="clstable1td">
+                    <input class="clsSearch" type="search" placeholder="Search User" /><button type="submit"
+                        class="clsbtnSearch"><i class="fa fa-search"></i></button>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="3" class="clstable1tds" >
+                    <table class="clsTable2">
+                        <tbody>
+                            <tr>
+                                <td colspan="3" class="clsTable2Td1">Add New User</td>
+                            </tr>
+                            <!-- <tr>
+                                <td colspan="3" class="clsTable2Td2">User ID: 123</td>
+                            </tr> -->
+
+                            <tr>
+                                <td class="clstdtableouter">
+                                    <!-- start innertable -->
+
+                                    <table class="clsTableUserDetails">
+                                        <tbody>
+
+                                            <tr>
+                                                <td>Name</td>
+                                                <td><input type="text" placeholder="Please Enter Name"></input></td>
+                                                <td>Email</td>
+                                                <td> <input type="text" placeholder="Please Enter Email"></input></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company Name</td>
+                                                <td><input type="text" placeholder="Please Enter Company Name"></input>
+                                                </td>
+                                                <td>Company Code</td>
+                                                <td> <input type="text"
+                                                        placeholder="Please Enter Company Code "></input></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company Address</td>
+                                                <td><input type="text" placeholder="Address Line1"> </input></td>
+                                                <td>GSTIN1</td>
+                                                <td><input type="text" placeholder="Please Enter GSTIN1"></input></td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td><input type="text" placeholder="Address Line2"> </input></td>
+                                                <td>GSTIN2</td>
+                                                <td><input placeholder="Please Enter GSTIN2" type="text"></input></td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                                <td><input type="text" placeholder="Address Line3" /> </td>
+                                                <td>GSTIN3</td>
+                                                <td><input type="text" placeholder="Please Enter GSTIN3"></input></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Contact Number</td>
+                                                <td colspan="3"><input class="clstxtContactNumber" type="text"
+                                                        placeholder="Contact Number" /> <input type="button"
+                                                        class="btnContactNumber" value="Add Contact" />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+
+                                                <td colspan="4" class="clsTableUserDetailstd">
+                                                    <input type="button" class="btnEdit" value="Cancel"
+                                                        onclick="LoadViewAllUser()" />&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <input type="button" class="btnEdit" value="Save"
+                                                        onclick="LoadViewAllUser()" />
+                                                </td>
+                                            </tr>
+
+
+
+
+
+                                        </tbody>
+                                    </table>
+
+                                </td>
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+
+    <script>
+        function LoadViewAllUser() {
+            window.location.href = "VIewAllUserDetails.html";
+        }
+    </script>
+</body>
+
+</html>
